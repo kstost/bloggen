@@ -1,0 +1,38 @@
+
+# Site settings
+title: Modern Tech Blog
+email: your-email@example.com
+description: >-
+  Welcome to my modern tech blog where I share insights about 
+  programming, technology, and software development.
+baseurl: "/bloggen"
+url: "https://kstost.github.io"
+github_username: kstost
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Custom settings
+author: Your Name
+social:
+  github: kstost
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
